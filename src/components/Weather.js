@@ -27,7 +27,7 @@ const Weather = () => {
   };
   useEffect(() => {
     handleSearch();
-  }, []);
+  }, [handleSearch]);
 
   return (
     <div className="col-md-12">
