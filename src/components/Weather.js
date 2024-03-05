@@ -7,7 +7,7 @@ const Weather = () => {
 
   const handleSearch = async () => {
     try {
-      let url = 
+      let url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&appid=79cf6ee59eebc0d0fbea5f2549b78d11&units=metric`;
       const res = await fetch(url);
       const data = await res.json();
       const { temp, humidity } = data.main;
